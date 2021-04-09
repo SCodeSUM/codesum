@@ -1,0 +1,7 @@
+Finished looking for duplicates in 2149988 files.
+Duplicate search took 2.01:50:58.3242372.
+Found 707072 files that are cloned.
+Number of unique clone clusters 259527
+Avg Duplication Factor: 2.72446412126677
+Median Duplication Factor: 2
+
