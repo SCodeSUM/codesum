@@ -52,7 +52,7 @@ class CodeGNNDualFcInfo_Fc:
 
         se = tdel(node_input)  # (None, 100, 100)embedding_1[1][0]
 
-        me = tdel(met_input)  # (None, 17, 100)embedding_1[2][0] 新增method
+        me = tdel(met_input)  # (None, 17, 100)embedding_1[2][0]
 
         tenc = CuDNNGRU(self.recdims, return_state=True, return_sequences=True)#cu_dnngru_1
         tencout, tstate_h = tenc(tde)  # (None, 50, 256), (N 274944

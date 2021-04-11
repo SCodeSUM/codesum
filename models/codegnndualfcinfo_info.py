@@ -38,7 +38,7 @@ class CodeGNNDualFcInfo_Info:
 
     def create_model(self):
         tdat_input = Input(shape=(self.tdatlen,))  # (None, 50)input_1
-        sdat_input = Input(shape=(self.sdatlen, self.config['stdatlen']))   #input_2#添加 10*25
+        sdat_input = Input(shape=(self.sdatlen, self.config['stdatlen']))   #(None,10,25)input_2 context
         com_input = Input(shape=(self.comlen,))  # (None, 13)input_3
         node_input = Input(shape=(self.smllen,))  # (None, 100)input_4
         edge_input = Input(shape=(self.smllen, self.smllen))  # (None, 100, 100)input_5
